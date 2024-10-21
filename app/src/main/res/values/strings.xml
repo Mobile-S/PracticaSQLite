@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Clase06_SQLite</string>
+    <string name="tit_main_activity">Ejemplo de Listas</string>
+    <string name="lbl_simplex">Lista Sencilla</string>
+    <string name="lbl_complex">Lista Compleja</string>
+    <string name="lbl_agregarx">Agregar Contacto</string>
+    <string name="correodestino">Correo de destino</string>
+    <string name="asunto">Asunto</string>
+    <string name="mensaje">Mensaje</string>
+
+    <string name="valdestino">Debe suministar un destinatario</string>
+    <string name="valasunto">Debe suministar un asunto</string>
+    <string name="valmensaje">Debe suministar un mensaje</string>
+
+    <string name="nom">Nombre</string>
+    <string name="apell">Apellidos</string>
+    <string name="email">Email</string>
+    <string name="num">Numero</string>
+    <string name="accion_guardar">Guardar Contacto</string>
+    <string name="accion_modificar">Modificar</string>
+    <string name="accion_eliminar">Eliminar</string>
+    <string name="cambios">Guardar Cambios</string>
+
+    <string name="btnEnviar">Enviar mensaje</string>
+</resources>
