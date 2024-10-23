@@ -21,8 +21,12 @@ class SimpleListActivity : AppCompatActivity() {
     private lateinit var lstSimp: ListView
     private lateinit var listaContactos: MutableList<Contacto> // Lista para almacenar los contactos
     private lateinit var btnEliminar: Button
+<<<<<<< HEAD
     private var contactoIdSeleccionado: Long = -1 // Change to Long
 
+=======
+    private var contactoIdSeleccionado: Int = -1
+>>>>>>> origin/main
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +55,11 @@ class SimpleListActivity : AppCompatActivity() {
         // Definir la acción de clic sobre los ítems de la lista
         lstSimp.onItemClickListener = OnItemClickListener { parent, view, position, _ ->
             // Obtener el ID del contacto seleccionado
+<<<<<<< HEAD
             contactoIdSeleccionado = obtenerIdContactoSeleccionado(position).toLong()
+=======
+            contactoIdSeleccionado = obtenerIdContactoSeleccionado(position)
+>>>>>>> origin/main
 
             // Mostrar un Toast con el nombre del contacto seleccionado
             val itemValue = lstSimp.getItemAtPosition(position) as String
@@ -76,7 +84,11 @@ class SimpleListActivity : AppCompatActivity() {
 
         // Asignar la funcionalidad al botón
         btnEliminar.setOnClickListener {
+<<<<<<< HEAD
             if (contactoIdSeleccionado != -1L) {
+=======
+            if (contactoIdSeleccionado != -1) {
+>>>>>>> origin/main
                 // Mostrar la pantalla emergente de confirmación
                 val dialog = AlertDialog.Builder(this)
                 dialog.setTitle("Eliminar Contacto")

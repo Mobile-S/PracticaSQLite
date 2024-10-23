@@ -20,8 +20,15 @@ class ModificarContactoActivity : AppCompatActivity() {
 
         db = DBAdapter(this)
 
+<<<<<<< HEAD
         contactoId = intent.getLongExtra("contact_id", -1)
 
+=======
+        // Obtener el ID del contacto pasado por el intent
+        contactoId = intent.getLongExtra("contact_id", -1)
+
+        // Verificar que el ID sea válido
+>>>>>>> origin/main
         if (contactoId != -1L) {
             cargarDatosContacto(contactoId)
         }
@@ -41,15 +48,21 @@ class ModificarContactoActivity : AppCompatActivity() {
             findViewById<EditText>(R.id.etApellidos).setText(cursor.getString(2))
             findViewById<EditText>(R.id.etEmail).setText(cursor.getString(3))
             findViewById<EditText>(R.id.etCelular).setText(cursor.getString(4))
+<<<<<<< HEAD
         } else {
             Toast.makeText(this, "No se encontró el contacto", Toast.LENGTH_SHORT).show()
+=======
+>>>>>>> origin/main
         }
 
         cursor?.close()
         db.close()
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     private fun confirmarModificacion() {
         // Mostrar un cuadro de diálogo de confirmación antes de modificar
         val builder = AlertDialog.Builder(this)
@@ -57,6 +70,10 @@ class ModificarContactoActivity : AppCompatActivity() {
         builder.setMessage("¿Estás seguro de que deseas modificar este contacto?")
 
         builder.setPositiveButton("Sí") { _, _ ->
+<<<<<<< HEAD
+=======
+            // Llamar a la función de guardar cambios si se confirma
+>>>>>>> origin/main
             guardarCambios()
         }
 

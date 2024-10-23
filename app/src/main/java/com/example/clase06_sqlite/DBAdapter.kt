@@ -62,8 +62,11 @@ class DBAdapter(val context: Context) {
         ) > 0
     }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main
     // Retrieves all contacts
     val getAllcontacts: Cursor
         get() = db!!.query(
@@ -95,13 +98,19 @@ class DBAdapter(val context: Context) {
                 eMail,
                 Celular
             ),
+<<<<<<< HEAD
             "$Iden=?",
             arrayOf(id.toString()),
+=======
+            "$Iden=$id",
+            null,
+>>>>>>> origin/main
             null,
             null,
             null,
             null
         )
+<<<<<<< HEAD
 
         if (mCursor != null && mCursor.moveToFirst()) {
             return mCursor
@@ -111,6 +120,12 @@ class DBAdapter(val context: Context) {
     }
 
 
+=======
+        mCursor?.moveToFirst()
+        return mCursor
+    }
+
+>>>>>>> origin/main
     // Inner class to create and update the datastore
     inner class DatabaseHelper(context: Context?) :
         SQLiteOpenHelper(
